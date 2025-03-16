@@ -288,6 +288,8 @@ ol {
 .content__card-link:hover {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
   cursor: pointer;
 }
 
@@ -316,7 +318,7 @@ ol {
 }
 
 .content__video-card-title {
-  display: inline-block;
+  display: block;
   inline-size: 196px;
   overflow: hidden;
   white-space: nowrap;
@@ -326,6 +328,7 @@ ol {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  padding-block-end: 5px;
 }
 
 .content__video-card-description {
@@ -334,6 +337,8 @@ ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-block-end: 2px;
 }
 
 .content__video-card-thumbnail {
